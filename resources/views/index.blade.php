@@ -12,71 +12,34 @@
     <div class="page-wrapper">
 
         <header class="main-header-two clearfix">
-            <div class="main-header-two__top">
-                <div class="main-header-two__top-details">
-                    <div class="container">
-                        <div class="main-header-two__top-details-inner">
-                            <ul class="list-unstyled main-header-two__top-details-list"
-                                style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: start;">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-email"></span>
-                                    </div>
-                                    <div class="text">
-                                        <h5>Drop a line</h5>
-                                        <p><a
-                                                href="mailto:yudhistira@bluetidesystemindonesia.co">yudhistira@bluetidesystemindonesia.com</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li style="margin: 0">
-                                    <div class="icon">
-                                        <span class="icon-pin"></span>
-                                    </div>
-                                    <div class="text">
-                                        <h5>Kebayoran Baru</h5>
-                                        <p>South Jakarta</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="main-header-two__logo">
-                                <a href="/"><img style="width: 8rem; border-radius: 10px;"
-                                        src="{{ asset('assets/btsi-images/logo/logo.png') }}" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="main-menu main-menu-two clearfix">
+            <nav class="main-menu main-menu-two clearfix" style="position: fixed; margin: 0; width: 100%;">
                 <div class="main-menu-two__wrapper clearfix">
-                    <div class="container">
-                        <div class="main-menu-two__wrapper-inner"
-                            style="display:flex; justify-content: space-between; align-items: center; padding: 0 40px">
-                            <div>
-                                <a href="/"><img style="width: 8rem; border-radius: 10px;"
-                                        src="{{ asset('assets/btsi-images/logo/logo.png') }}" alt=""></a>
-                            </div>
-                            <div class="main-menu-two__left">
-                                <div class="main-menu-two__main-menu-box">
-                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-                                    <ul class="main-menu__list one-page-scroll-menu">
-                                        <li class="current scrollToLink">
-                                            <a href="/">Home </a>
-                                        </li>
-                                        <li class="scrollToLink">
-                                            <a href="#about">About</a>
-                                        </li>
-                                        <li class="scrollToLink">
-                                            <a href="#why-us">Why Us</a>
-                                        </li>
-                                        <li class="scrollToLink">
-                                            <a href="#products">Products</a>
-                                        </li>
-                                        <li class="scrollToLink">
-                                            <a href="#contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div class="main-menu-two__wrapper-inner"
+                        style="display:flex; justify-content: space-between; align-items: center; padding: 0 40px; border-radius: 0;">
+                        <div>
+                            <a href="/"><img style="width: 8rem; border-radius: 10px;"
+                                    src="{{ asset('assets/btsi-images/logo/logo.png') }}" alt=""></a>
+                        </div>
+                        <div class="main-menu-two__left">
+                            <div class="main-menu-two__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list one-page-scroll-menu">
+                                    <li class="current scrollToLink">
+                                        <a href="/">Home </a>
+                                    </li>
+                                    <li class="scrollToLink">
+                                        <a href="#about">About</a>
+                                    </li>
+                                    <li class="scrollToLink">
+                                        <a href="#why-us">Why Us</a>
+                                    </li>
+                                    <li class="scrollToLink">
+                                        <a href="#products">Products</a>
+                                    </li>
+                                    <li class="scrollToLink">
+                                        <a href="#contact">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -84,27 +47,23 @@
             </nav>
         </header>
 
-        <div class="stricky-header stricked-menu main-menu main-menu-two">
-            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-        </div><!-- /.stricky-header -->
-
         <!--Main Slider Start-->
-        <section class="main-slider-two clearfix" id="banner">
+        <section class="main-slider-two clearfix" id="banner" style="margin-top: 3rem">
             <div class="swiper-container thm-swiper__slider"
                 data-swiper-options='{"slidesPerView": 1, "loop": true,
-                                                                                                                        "effect": "fade",
-                                                                                                                        "pagination": {
-                                                                                                                        "el": "#main-slider-pagination",
-                                                                                                                        "type": "bullets",
-                                                                                                                        "clickable": true
-                                                                                                                        },
-                                                                                                                        "navigation": {
-                                                                                                                        "nextEl": "#main-slider__swiper-button-next",
-                                                                                                                        "prevEl": "#main-slider__swiper-button-prev"
-                                                                                                                        },
-                                                                                                                        "autoplay": {
-                                                                                                                        "delay": 5000
-                                                                                                                        }}'>
+                                                                                                                                                                                                "effect": "fade",
+                                                                                                                                                                                                "pagination": {
+                                                                                                                                                                                                "el": "#main-slider-pagination",
+                                                                                                                                                                                                "type": "bullets",
+                                                                                                                                                                                                "clickable": true
+                                                                                                                                                                                                },
+                                                                                                                                                                                                "navigation": {
+                                                                                                                                                                                                "nextEl": "#main-slider__swiper-button-next",
+                                                                                                                                                                                                "prevEl": "#main-slider__swiper-button-prev"
+                                                                                                                                                                                                },
+                                                                                                                                                                                                "autoplay": {
+                                                                                                                                                                                                "delay": 5000
+                                                                                                                                                                                                }}'>
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
@@ -113,7 +72,7 @@
                         </div>
                         <!-- /.image-layer -->
 
-                        <div class="container">
+                        <div class="container" style="height: 100vh">
                             <div class="main-slider-two__inner">
                                 <div class="row">
                                     <div class="col-xl-5 col-lg-7">
@@ -135,7 +94,7 @@
                         </div>
                         <!-- /.image-layer -->
 
-                        <div class="container">
+                        <div class="container" style="height: 100vh;">
                             <div class="main-slider-two__inner">
                                 <div class="row">
                                     <div class="col-xl-5 col-lg-7">
@@ -457,10 +416,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -478,10 +437,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -498,10 +457,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -518,10 +477,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -538,10 +497,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -558,10 +517,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -578,10 +537,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -598,10 +557,10 @@
                                 <div class="services-two__icon-box">
                                     <div class="services-two__icon"
                                         style="
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-size: contain; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-position: center; 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    background-repeat: no-repeat;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-image: url('{{ asset('assets/btsi-images/logo/logo-hiware.png') }}'); 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-size: contain; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-position: center; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            background-repeat: no-repeat;">
                                     </div>
 
                                 </div>
@@ -633,31 +592,31 @@
                         <div class="brand-one__main-content">
                             <div class="thm-swiper__slider swiper-container"
                                 data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                                                                                                                                                                                                                                                                                                                                                                                        "0": {
-                                                                                                                                                                                                                                                                                                                                                                                            "spaceBetween": 30,
-                                                                                                                                                                                                                                                                                                                                                                                            "slidesPerView": 2
-                                                                                                                                                                                                                                                                                                                                                                                        },
-                                                                                                                                                                                                                                                                                                                                                                                        "375": {
-                                                                                                                                                                                                                                                                                                                                                                                            "spaceBetween": 30,
-                                                                                                                                                                                                                                                                                                                                                                                            "slidesPerView": 2
-                                                                                                                                                                                                                                                                                                                                                                                        },
-                                                                                                                                                                                                                                                                                                                                                                                        "575": {
-                                                                                                                                                                                                                                                                                                                                                                                            "spaceBetween": 30,
-                                                                                                                                                                                                                                                                                                                                                                                            "slidesPerView": 3
-                                                                                                                                                                                                                                                                                                                                                                                        },
-                                                                                                                                                                                                                                                                                                                                                                                        "767": {
-                                                                                                                                                                                                                                                                                                                                                                                            "spaceBetween": 50,
-                                                                                                                                                                                                                                                                                                                                                                                            "slidesPerView": 4
-                                                                                                                                                                                                                                                                                                                                                                                        },
-                                                                                                                                                                                                                                                                                                                                                                                        "991": {
-                                                                                                                                                                                                                                                                                                                                                                                            "spaceBetween": 50,
-                                                                                                                                                                                                                                                                                                                                                                                            "slidesPerView": 5
-                                                                                                                                                                                                                                                                                                                                                                                        },
-                                                                                                                                                                                                                                                                                                                                                                                        "1199": {
-                                                                                                                                                                                                                                                                                                                                                                                            "spaceBetween": 100,
-                                                                                                                                                                                                                                                                                                                                                                                            "slidesPerView": 5
-                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                    }}'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                "0": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "spaceBetween": 30,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "slidesPerView": 2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                "375": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "spaceBetween": 30,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "slidesPerView": 2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                "575": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "spaceBetween": 30,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "slidesPerView": 3
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                "767": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "spaceBetween": 50,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "slidesPerView": 4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                "991": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "spaceBetween": 50,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "slidesPerView": 5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                "1199": {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "spaceBetween": 100,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    "slidesPerView": 5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            }}'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="{{ asset('assets/images/brand/brand-1-1.png') }}" alt="">
@@ -747,30 +706,30 @@
                     <div class="col-xl-9">
                         <div class="brand-one__main-content">
                             <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                                            "0": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView": 2
-                                                },
-                                            "375": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView": 2
-                                                },
-                                            "575": {
-                                                "spaceBetween": 30,
-                                                "slidesPerView": 3
-                                                },
-                                            "767": {
-                                                "spaceBetween": 50,
-                                                "slidesPerView": 4
-                                                },
-                                            "991": {
-                                                "spaceBetween": 50,
-                                                "slidesPerView": 5
-                                                },
-                                            "1199": {
-                                                "spaceBetween": 100,
-                                                "slidesPerView": 5
-                                            }}}'>
+                                                                                                                    "0": {
+                                                                                                                        "spaceBetween": 30,
+                                                                                                                        "slidesPerView": 2
+                                                                                                                        },
+                                                                                                                    "375": {
+                                                                                                                        "spaceBetween": 30,
+                                                                                                                        "slidesPerView": 2
+                                                                                                                        },
+                                                                                                                    "575": {
+                                                                                                                        "spaceBetween": 30,
+                                                                                                                        "slidesPerView": 3
+                                                                                                                        },
+                                                                                                                    "767": {
+                                                                                                                        "spaceBetween": 50,
+                                                                                                                        "slidesPerView": 4
+                                                                                                                        },
+                                                                                                                    "991": {
+                                                                                                                        "spaceBetween": 50,
+                                                                                                                        "slidesPerView": 5
+                                                                                                                        },
+                                                                                                                    "1199": {
+                                                                                                                        "spaceBetween": 100,
+                                                                                                                        "slidesPerView": 5
+                                                                                                                    }}}'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="{{ asset('assets/images/brand/brand-1-1.png') }}" alt="">

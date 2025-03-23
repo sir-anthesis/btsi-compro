@@ -1489,7 +1489,7 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .main-menu .mobile-nav__toggler {
+    /* .main-menu .mobile-nav__toggler {
         color: var(--insur-base);
         display: inline-block;
         padding: 12px 0;
@@ -1503,7 +1503,7 @@
         color: var(--insur-base);
         display: inline-block;
         padding: 22px 0;
-    }
+    } */
 
     .main-menu-three .mobile-nav__toggler {
         color: var(--insur-base);

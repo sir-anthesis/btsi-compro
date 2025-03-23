@@ -782,7 +782,7 @@ ul {
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
 
   .main-menu .main-menu__list,
   .main-menu .main-menu__list>li>ul,
@@ -1098,7 +1098,7 @@ ul {
   color: var(--insur-primary);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   .main-menu .mobile-nav__toggler {
     display: none;
   }
