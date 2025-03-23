@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<x-head rtlMode='{{ isset($rtlMode) ? $rtlMode : "" }}' headTitle='{{ isset($headTitle) ? $headTitle : "" }}' css='{!! isset($css) ? $css : "" !!}' css2='{!! isset($css2) ? $css2 : "" !!}' css3='{!! isset($css3) ? $css3 : "" !!}'/>
+<x-head rtlMode='{{ isset($rtlMode) ? $rtlMode : "" }}' headTitle='{{ isset($headTitle) ? $headTitle : "" }}'
+    css='{!! isset($css) ? $css : "" !!}' css2='{!! isset($css2) ? $css2 : "" !!}'
+    css3='{!! isset($css3) ? $css3 : "" !!}' />
 
-<body class="custom-cursor <?php echo (isset($bodyClass) ? $bodyClass   : '')?>">
+<body class="custom-cursor <?php echo (isset($bodyClass) ? $bodyClass : '')?>">
 
     <x-customcursor />
 
@@ -15,19 +17,19 @@
 
             if (!isset($header)) {
                 ?>
-                <x-header/>
-                <x-strickyheader/>
-                <?php
-            }
+        <x-header />
+        <x-strickyheader />
+        <?php
+}
         ?>
 
         <?php 
 
             if (isset($subTitle)) {
                 ?>
-                <x-pageheader title='{{ isset($title) ? $title : "" }}' subTitle='{{ isset($subTitle) ? $subTitle : "" }}' />
-                <?php
-            }
+        <x-pageheader title='{{ isset($title) ? $title : "" }}' subTitle='{{ isset($subTitle) ? $subTitle : "" }}' />
+        <?php
+}
         ?>
 
         @yield('content')
@@ -36,19 +38,9 @@
 
             if (!isset($counterone)) {
                 ?>
-                <x-counterone/>
-                <?php
-            }
-        ?>
-
-
-        <?php 
-
-            if (!isset($footer)) {
-                ?>
-                <x-footer/>
-                <?php
-            }
+        <x-counterone />
+        <?php
+}
         ?>
 
     </div>

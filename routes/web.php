@@ -1,19 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ShopController;
 use App\Http\Controllers\DemosController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\InsuranceController;
-use App\Http\Controllers\ShopController;
-use App\Http\Controllers\NewsController;
 
 Route::controller(DemosController::class)->group(function () {
     Route::get('/', 'index')->name('index');
 });
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // demos
 Route::prefix('demos')->group(function () {
