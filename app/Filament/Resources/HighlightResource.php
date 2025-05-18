@@ -27,7 +27,7 @@ class HighlightResource extends Resource
         return $form
         ->schema([
             Fieldset::make()->schema([
-                FileUpload::make('image')->image()->disk('public')->label('Image (16:9)')->columnSpan(12),
+                FileUpload::make('image')->image()->label('Image (16:9)')->columnSpan(12),
                 TextInput::make('title')->label('Title')->required()->columnSpan(12),
                 TextInput::make('description')->label('Description')->columnSpan(12),
             ]),
